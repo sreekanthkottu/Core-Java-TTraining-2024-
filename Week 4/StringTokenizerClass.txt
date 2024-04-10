@@ -1,0 +1,25 @@
+import java.util.*;
+public class Test
+{   
+
+     public static void main(String args[])
+   {
+// By default delimiter is space	
+              String str="this is demo on StringTokenizer, Which is  a class in util package.";
+	StringTokenizer st=new StringTokenizer(str);
+	System.out.println("number of tokens:"+st.countTokens());
+	while(st.hasMoreTokens())
+	{
+	   System.out.println(st.nextToken());
+	}
+	
+	String str1="ram=600;raju=500;jan=700;vasu=650;ramana=450";
+	StringTokenizer st1=new StringTokenizer(str1,"=;");
+	System.out.println("number of tokens:"+st1.countTokens());
+	while(st1.hasMoreTokens())
+	{
+	   System.out.println(st1.nextToken());
+	}
+      	
+   }
+}

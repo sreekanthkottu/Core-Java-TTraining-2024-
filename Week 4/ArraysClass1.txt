@@ -1,0 +1,30 @@
+import java.util.*;
+public class Test
+{   
+    static int arr[]=new int[]{34,56,23,54,32,12,3,6,22,78,66,44};
+   public static void main(String args[])
+   {
+	System.out.println("Array before Sorting: "+Arrays.toString(arr));
+	Arrays.sort(arr,1,4);
+	System.out.println("Array after Sorting  1 to 3 elements excluding 4th element: "+Arrays.toString(arr));
+	Arrays.sort(arr);
+	//Arrays.fill(arr,1);
+	//Arrays.fill(arr,2,8,0);
+	System.out.println(Arrays.binarySearch(arr,32));
+	
+//Collections.reverseOrder doesn't  work for primitive types.
+Integer[] arr1 = { 34,56,23,54,32,12,3,6,22,78,66,44};
+	System.out.println("Array before Sorting: "+Arrays.toString(arr1));
+	Arrays.sort(arr1, Collections.reverseOrder());
+	System.out.println("Array Sorting in reverse Order: "+Arrays.toString(arr1));
+	Arrays.sort(arr1);
+ 	System.out.println("Array Sorting in ascending Order: "+Arrays.toString(arr1));
+//Two arrays are considered equal if both arrays contain the same number of elements,contain the same elements in the same order
+Integer[] arr2= { 34,56,23,54,32,12,3,6,22,78,66,44};
+Arrays.sort(arr2);
+System.out.println(Arrays.equals(arr2,arr1));
+
+
+   }
+
+}

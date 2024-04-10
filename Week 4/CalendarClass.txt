@@ -1,0 +1,22 @@
+import java.util.*;
+public class Test
+{   
+
+     public static void main(String args[])
+     {
+	Calendar c1=Calendar.getInstance();
+	//System.out.println(c1);
+               System.out.println(c1.get(Calendar.DATE));
+                System.out.println(c1.get(Calendar.HOUR_OF_DAY));
+                System.out.println(c1.get(Calendar.WEEK_OF_YEAR));
+	c1.add(Calendar.MONTH,2);
+	//System.out.println(c1);
+                c1.set(Calendar.MONTH,2);
+	//c1.set(2005,7,15);
+	System.out.println(c1);
+	//c1.clear();
+	c1.clear(Calendar.MONTH);
+	System.out.println(c1);  
+
+      }
+}

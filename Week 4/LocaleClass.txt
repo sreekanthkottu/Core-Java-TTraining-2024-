@@ -1,0 +1,22 @@
+import java.util.*;
+class Test{
+     public static void main(String args[])
+     {
+	Locale l1=Locale.getDefault();
+	System.out.println(l1);
+	System.out.println(l1.getDisplayCountry());
+	System.out.println(l1.getDisplayLanguage());
+	System.out.println(l1.getDisplayName());
+	
+	Locale.setDefault(Locale.UK);
+	Locale l2=Locale.getDefault();
+	System.out.println(l2);
+	System.out.println(l2.getDisplayCountry());
+	System.out.println(l2.getDisplayLanguage());
+	System.out.println(l2.getDisplayName());
+
+
+     }
+}
+
+
